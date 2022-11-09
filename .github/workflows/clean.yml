@@ -14,6 +14,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: 
+          script: |
+              cd ../pub/
               unalias rm
               rm -rf CMSC389T-Web-Template
